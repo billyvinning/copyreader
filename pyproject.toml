@@ -10,14 +10,13 @@ authors = [
 ]
 dynamic = ["readme"]
 dependencies = [
-  "langchain-core==2.26.*",
+  "langchain-core==1.0.*",
   "pydantic-core==2.41.*"
 ]
 
 [project.optional-dependencies]
-test = ["pytest==8.3.*"]
-vertexai = ["langchain-google-genai==3.0.*"]
-dev = ["copyreader[test]", "pre-commit==4.2.*"]
+test = ["pytest==8.4.*"]
+dev = ["copyreader[test]", "pre-commit==4.3.*"]
 
 [tool.setuptools.dynamic]
 readme = {file = "README.md"}
