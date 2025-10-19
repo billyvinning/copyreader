@@ -140,7 +140,7 @@ class Annotations(RootModel[list[Annotation]]):
         out[None] = null_mask
         return out
 
-    def _get_annotation_text(self, text: str) -> list[str | tuple[str, str]]:
+    def get_annotation_text(self, text: str) -> list[str | tuple[str, str]]:
         masks = self._get_annotation_masks(text)
         ix_to_annotation_mapping = dict(enumerate(masks))
 

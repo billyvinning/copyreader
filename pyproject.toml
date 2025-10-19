@@ -17,7 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest==8.4.*"]
-app = ["streamlit==1.50.*", "st-annotated-text==4.0.*"]
+app = ["streamlit==1.50.*", "st-annotated-text==4.0.*", "langchain-google-vertexai==3.0.*", "pandas==2.3.*"]
 dev = ["copyreader[test,app]", "pre-commit==4.3.*"]
 
 [tool.setuptools.dynamic]
@@ -46,7 +46,7 @@ check_untyped_defs = true
 
 [[tool.mypy.overrides]]
 ignore_missing_imports = true
-module = []
+module = ["annotated_text.*", "langchain_google_vertexai.*", "streamlit.*"]
 
 [tool.interrogate]
 ignore-overloaded-functions = true

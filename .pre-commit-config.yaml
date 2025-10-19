@@ -31,5 +31,5 @@ repos:
   hooks:
   - id: mypy
     additional_dependencies: [pydantic_core==2.41.*, pydantic==2.12.*, pytest==8.3.*, langchain-core==1.0.*, 
-        numpy==2.3.*]
+        numpy==2.3.*, "pandas-stubs"]
     args: []
